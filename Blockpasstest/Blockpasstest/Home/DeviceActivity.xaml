@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="True"
+    xmlns:pankace="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    xmlns:icons="clr-namespace:Blockpasstest.icons"
+    xmlns:form="clr-namespace:Blockpasstest.Home.DeviceActivityContext"
+    x:Class="Blockpasstest.Home.DeviceActivity">
+    <ContentPage.Content>
+        <StackLayout
+            Margin="24,15,24,0"
+        >
+            <Grid
+                Margin="0,0,0,24"
+            >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <pankace:PancakeView
+                    Grid.Column="0"
+                    VerticalOptions="Center"
+                >
+                    <pankace:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="BackToProfile" />
+                    </pankace:PancakeView.GestureRecognizers>
+                    <Grid>
+                        <icons:ChevronLeftSVG />
+                        <Label
+                            Margin="30,1,0,0"
+                            Text="Back"
+                            TextColor="#5492F9"
+                            FontFamily="SourceSansPro-SemiBold.ttf"
+                            FontSize="16"
+                        />
+                    </Grid>
+                </pankace:PancakeView>
+                <StackLayout
+                    Grid.Column="1"
+                    VerticalOptions="End"
+                >
+                    <Label
+                        HorizontalOptions="End"
+                        Text="Device Activity"
+                        TextColor="#000"
+                        FontFamily="Montserrat-Bold.ttf#Montserrat"
+                        FontSize="20"
+                        Padding="0"
+                        Margin="0"
+                    />
+                    <Label
+                        VerticalOptions="Start"
+                        HorizontalOptions="End"
+                        Text="All your latest movements"
+                        TextColor="#9e9e9e"
+                        FontFamily="SourceSansPro-Regular.ttf#SourceSansPro"
+                        FontSize="14"
+                        Padding="0"
+                        Margin="0,0,0,0"
+                    />
+                </StackLayout>
+            </Grid>
+            <ScrollView>
+                <StackLayout
+                    x:Name="ActivityData"
+                >
+                    <icons:LoaderSVG />
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <ReleaseVersion>0.8</ReleaseVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Nethereum.Web3" Version="4.14.0" />
+    <PackageReference Include="Nethereum.HdWallet" Version="4.14.0" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
+    <PackageReference Include="Xamarin.Forms.InputKit" Version="4.1.6" />
+    <PackageReference Include="Acr.UserDialogs.Extended" Version="1.0.11" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.1.0" />
+    <PackageReference Include="ColorPicker.Xamarin.Forms" Version="1.3.4.21" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="2.88.3" />
+    <PackageReference Include="Wiry.Base32.Patched" Version="1.0.6.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="icons\" />
+    <None Remove="icons\loader-logo.svg" />
+    <None Remove="Fonts\" />
+    <None Remove="Fonts\Montserrat-Bold.ttf" />
+    <None Remove="Fonts\Montserrat-SemiBold.ttf" />
+    <None Remove="Fonts\SourceSansPro-Regular.ttf" />
+    <None Remove="Assets\" />
+    <None Remove="Custom\" />
+    <None Remove="Fonts\Montserrat-Medium.ttf" />
+    <None Remove="Home\" />
+    <None Remove="Fonts\SourceSansPro-SemiBold.ttf" />
+    <None Remove="Popups\" />
+    <None Remove="Fonts\Montserrat-Regular.ttf" />
+    <None Remove="UserGroups.json" />
+    <None Remove="Home\DeviceActivityContext\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="icons\" />
+    <Folder Include="Fonts\" />
+    <Folder Include="Assets\" />
+    <Folder Include="Custom\" />
+    <Folder Include="Home\" />
+    <Folder Include="Popups\" />
+    <Folder Include="Home\DeviceActivityContext\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\Montserrat-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat-SemiBold.ttf" />
+    <EmbeddedResource Include="Fonts\SourceSansPro-Regular.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat-Medium.ttf" />
+    <EmbeddedResource Include="Fonts\SourceSansPro-SemiBold.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat-Regular.ttf" />
+    <EmbeddedResource Include="UserGroups.json" />
+  </ItemGroup>
+</Project>

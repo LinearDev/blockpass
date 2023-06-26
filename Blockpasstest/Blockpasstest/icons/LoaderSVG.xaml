@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Blockpasstest.icons.LoaderSVG">
+    <ContentView.Content>
+        <Grid>
+            <Path
+                x:Name="Loader"
+                Data="M89 50C89 28.4652 71.5348 11 50 11C28.4652 11 11 28.4652 11 50M17.613 50C17.613 32.1957 32.0261 17.613 50 17.613C67.9739 17.613 82.387 32.1957 82.387 50"
+                Fill="#5492F9"
+                WidthRequest="100"
+                HeightRequest="100"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Scale="0.5"
+            />
+        </Grid>
+    </ContentView.Content>
+</ContentView>
+

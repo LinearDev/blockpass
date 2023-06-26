@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Blockpasstest.icons.EyeOpenSVG">
+    <ContentView.Content>
+        <Grid>
+            <Path Data="M0.666672 8.00002C0.666672 8.00002 3.33334 2.66669 8.00001 2.66669C12.6667 2.66669 15.3333 8.00002 15.3333 8.00002C15.3333 8.00002 12.6667 13.3334 8.00001 13.3334C3.33334 13.3334 0.666672 8.00002 0.666672 8.00002Z" Stroke="#5492F9" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+            <Path Data="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z" Stroke="#5492F9" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>
+

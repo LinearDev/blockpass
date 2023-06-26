@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    xmlns:icons="clr-namespace:Blockpasstest.icons"
+    x:Class="Blockpasstest.Home.PassComponent"
+    x:Name="This">
+    <ContentView.Content>
+        <Frame
+            HasShadow="False"
+            CornerRadius="10"
+            BackgroundColor="#f4f4f4"
+            Padding="18"
+        >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Text="{Binding Source={x:Reference This}, Path=CustomTitle}"
+                    FontFamily="Montserrat-SemiBold.ttf#Montserrat"
+                    FontSize="15"
+                />
+                <!--Group dot-->
+                <Frame
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    Padding="9,0"
+                    Background="#64D9E0"
+                    HeightRequest="12"
+                    CornerRadius="10"
+                    HasShadow="False"
+                />
+                <!--Credentials-->
+                <StackLayout
+                    VerticalOptions="Start"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Margin="0,14,0,0"
+                    x:Name="LabelContext"
+                />
+                <!--View btn-->
+                <Frame
+                    BackgroundColor="Transparent"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Padding="0"
+                    HasShadow="False"
+                >
+                    <pancake:PancakeView
+                        VerticalOptions="End"
+                        Padding="0,2"
+                        Margin="0"
+                        Scale="1.2"
+                        x:Name="ViewIcon"
+                    >
+                        <pancake:PancakeView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="SwitchViewMode" />
+                        </pancake:PancakeView.GestureRecognizers>
+                        <icons:EyeOpenSVG
+                            Padding="0,0,0,2"
+                            IsVisible="True"
+                            IsEnabled="False"
+                            IsTabStop="False"
+                            InputTransparent="True"
+                        />
+                    </pancake:PancakeView>
+                </Frame>
+            </Grid>
+        </Frame>
+    </ContentView.Content>
+</ContentView>
+

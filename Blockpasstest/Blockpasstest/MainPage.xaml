@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Blockpasstest.MainPage"
+             xmlns:local="clr-namespace:Blockpasstest.icons"
+>
+    <Grid
+        BackgroundColor="#2196F3"
+    >
+        <StackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+        >
+            <local:LoadreLogoSVG
+                HorizontalOptions="Center"
+            />
+            <Label
+                Text="Blockpass"
+                VerticalOptions="Center"
+                HorizontalTextAlignment="Center"
+                TextColor="White"
+                FontSize="36"
+                
+                FontFamily="Montserrat-Bold.ttf#Montserrat"
+            />
+        </StackLayout>
+    </Grid>
+</ContentPage>
+

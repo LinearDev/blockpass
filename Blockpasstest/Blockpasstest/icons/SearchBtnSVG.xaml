@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Blockpasstest.icons"
+    x:Class="Blockpasstest.icons.SearchBtnSVG"
+    x:Name="This">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <local:ColorConverter x:Key="ColorConverter" />
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <Grid>
+            <Path x:Name="Corner" Data="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" Stroke="{Binding Source={x:Reference This}, Path=CustomColor, Converter={StaticResource ColorConverter}}" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+            <Path x:Name="Main" Data="M21 20.9999L16.65 16.6499" Stroke="{Binding Source={x:Reference This}, Path=CustomColor, Converter={StaticResource ColorConverter}}" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>
+

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:bp="clr-namespace:Blockpasstest.Home"
+    xmlns:icons="clr-namespace:Blockpasstest.icons"
+    xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+    x:Class="Blockpasstest.Home.SearchContent">
+    <ContentView.Content>
+        <StackLayout Margin="24, 0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <bp:HeadingComponent
+                    Grid.Row="0"
+                    CustomTitle="Search"
+                    CustomSubTitle="Fast way to find Passwords and&#x0a;Blocks"
+                />
+                <Frame
+                    Grid.Row="1"
+                    Padding="0"
+                    CornerRadius="23"
+                    BackgroundColor="#f4f4f4"
+                    HasShadow="False"
+                >
+                    <Grid>
+                        <Grid
+                            x:Name="EntryPlaceholder"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            Padding="16,0"
+                        >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <icons:SearchMiniSVG Grid.Column="0"/>
+                            <Label
+                                x:Name="EntryPlaceholderText"
+                                Grid.Column="1"
+                                Text="Search"
+                                TextColor="#9e9e9e"
+                                FontFamily="SourceSansPro-SemiBold.ttf"
+                                FontSize="14"
+                            />
+                        </Grid>
+                        <input:AdvancedEntry
+                            x:Name="SearchEntry"
+                            BorderColor="Transparent"
+                            BackgroundColor="Transparent"
+                            CornerRadius="0"
+                            Margin="0,13"
+                            FontFamily="SourceSansPro-SemiBold.ttf"
+                            TextFontSize="14"
+                            TextColor="#000"
+                            Focused="Search_Focused"
+                            Unfocused="Search_Unfocused"
+                            TextChanged="SearchEntry_TextChanged"
+                        />
+                    </Grid>
+                </Frame>
+                <ScrollView
+                    Grid.Row="2"
+                    Margin="0,26,0,0"
+                >
+                    <StackLayout
+                        x:Name="SearchContentBox"
+                    >
+                        <Label Text="test" />
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
+

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:assets="clr-namespace:Blockpasstest.Assets"
+    xmlns:icons="clr-namespace:Blockpasstest.icons"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+    x:Class="Blockpasstest.RegistrationPage"
+    ios:Page.UseSafeArea="true"
+    BackgroundColor="#FFFFFF"
+>
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="1"
+                VerticalOptions="Center"
+            >
+                <icons:LogoBlueSVG
+                    x:Name="LogoBlueSVG"
+                    HorizontalOptions="Center"
+                />
+                <Label
+                    HorizontalOptions="Center"
+                    FontSize="20"
+                    FontFamily="Montserrat-SemiBold.ttf#Montserrat"
+                    Text="Registration"
+                    TextColor="#000000"
+                />
+                <Label
+                    HorizontalTextAlignment="Center"
+                    FontSize="14"
+                    FontFamily="SourceSansPro-Regular.ttf#Source Sans Pro"
+                    Text="Create phrase to generate&#x0a;account private key"
+                    TextColor="#9E9E9E"
+                />
+                <Frame
+                    Margin="45,24,45,0"
+                    Padding="0"
+                    BackgroundColor="#f4f4f4"
+                    BorderColor="#f4f4f4"
+                    CornerRadius="7"
+                    HasShadow="False"
+                >
+                    <Grid>
+                        <input:AdvancedEntry
+                            Keyboard="Default"
+                            x:Name="PhraseInput"
+                            BorderColor="Transparent"
+                            CornerRadius="7"
+                            TextFontSize="16"
+                            TextColor="#000"
+                            Margin="-25,12,0,12"
+                            BackgroundColor="Transparent"
+                            FlexLayout.Grow="1"
+                            Placeholder="Phrase..."
+                            FontFamily="SourceSansPro-Regular.ttf#Source Sans Pro"
+                            
+                        />
+                        <pancake:PancakeView x:Name="CreateAccountBtn" Padding="12,7" HorizontalOptions="End">
+                            <pancake:PancakeView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="CreateFraze" />
+                            </pancake:PancakeView.GestureRecognizers>
+                            <icons:ArrowRightSVG
+                                IsVisible="True"
+                                IsEnabled="False"
+                                IsTabStop="False"
+                                InputTransparent="True"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                            />
+                        </pancake:PancakeView>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="2">
+                <ContentView
+                    Padding="45,0,45,0"
+                    HorizontalOptions="FillAndExpand"
+                    Margin="0,0,0,10"
+                >
+                    <assets:BFrame
+                        Padding="0"
+                        CornerRadius="7"
+                        ShadowColor="Black"
+                        ShadowOpacity="0.1"
+                        ShadowRadius="10"
+                    >
+                        <Frame.Content>
+                            <Button
+                                FontSize="10"
+                                FontFamily="Montserrat-Medium.ttf#Montserrat"
+                                Text="I already have account"
+                                Clicked="GoToLogin"
+                                TextColor="#5492F9"
+                            />
+                        </Frame.Content>
+                    </assets:BFrame>
+                </ContentView>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>
+

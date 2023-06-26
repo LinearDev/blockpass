@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Blockpasstest.icons.DeleteSVG">
+    <ContentView.Content>
+        <Grid>
+            <Path Data="M28 5.33334H10.6666L1.33331 16L10.6666 26.6667H28C28.7072 26.6667 29.3855 26.3857 29.8856 25.8856C30.3857 25.3855 30.6666 24.7073 30.6666 24V8.00001C30.6666 7.29277 30.3857 6.61449 29.8856 6.11439C29.3855 5.61429 28.7072 5.33334 28 5.33334Z" Stroke="black" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+            <Path Data="M24 12L16 20" Stroke="black" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+            <Path Data="M16 12L24 20" Stroke="black" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>
+

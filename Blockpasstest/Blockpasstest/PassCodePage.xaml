@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:assets="clr-namespace:Blockpasstest.Assets"
+    xmlns:icons="clr-namespace:Blockpasstest.icons"
+    xmlns:pankace="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    x:Class="Blockpasstest.PassCodePage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="1"
+                VerticalOptions="Center"
+            >
+                <Label
+                    HorizontalOptions="Center"
+                    FontSize="20"
+                    FontFamily="Montserrat-SemiBold.ttf#Montserrat"
+                    Text="Access Code"
+                    TextColor="#000000"
+                />
+                <Label
+                    HorizontalTextAlignment="Center"
+                    FontSize="14"
+                    FontFamily="SourceSansPro-Regular.ttf#Source Sans Pro"
+                    Text="Use code to access app"
+                    TextColor="#9E9E9E"
+                />
+                <Grid Margin="0,40,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Frame Grid.Column="1"
+                        x:Name="DotOne"
+                        Padding="8"
+                        HasShadow="False"
+                        Background="#f4f4f4"
+                        CornerRadius="9"
+                        Margin="0,0,8,0"
+                    />
+                    <Frame Grid.Column="2"
+                        x:Name="DotTwo"
+                        Padding="8"
+                        HasShadow="False"
+                        Background="#f4f4f4"
+                        CornerRadius="9"
+                        Margin="8,0"
+                    />
+                    <Frame Grid.Column="3"
+                        x:Name="DotThree"
+                        Padding="8"
+                        HasShadow="False"
+                        Background="#f4f4f4"
+                        CornerRadius="9"
+                        Margin="8,0"
+                    />
+                    <Frame Grid.Column="4"
+                        x:Name="DotFour"
+                        Padding="8"
+                        HasShadow="False"
+                        Background="#f4f4f4"
+                        CornerRadius="9"
+                        Margin="8,0,0,0"
+                    />
+                </Grid>
+                <StackLayout
+                    Margin="45,50,45,0"
+                >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <assets:BFrame Grid.Column="0"
+                            CornerRadius="29"
+                            ShadowOpacity="0.1"
+                            ShadowColor="#000"
+                            ShadowRadius="10"
+                            HorizontalOptions="Center"
+                            Padding="0"
+                        >
+                            <Button
+                                Text="1"
+                                Padding="25,17"
+                                FontSize="20"
+                                TextColor="#000"
+                                CornerRadius="29"
+                                FontFamily="Montserrat-SemiBold.ttf#Montserrat"
+                                Clicked="Button_One"
+                            />
+                        </assets:BFrame>
+                        <assets:BFrame Grid.Column="1"
+                            ShadowOpacity="0.1"
+                            ShadowColor="#000"
+                            ShadowRadius="10"
+                            HorizontalOptions="Center"
+                            Padding="0"
+                            BackgroundColor="#fff"
+                            BorderColor="Transparent"
+                            CornerRadius="29"
+                            HasShadow="True"
+                        >
+                            <Button
+                                Text="2"
+                                Padding="23,17"
+                                FontSize="20"
+                                TextColor="#000"
+                                FontFamily="Montserrat-SemiBold.ttf#Montserrat"
+                                Clicked="Button_Two"
+                            />
+                        </assets:BFrame>
+                        <assets:BFrame Grid.Column="2"
+                            ShadowOpacity="0.1"
+                            ShadowColor="#000"
+                            ShadowRadius="10"
+                            HorizontalOptions="Center"
+                            Padding="0"
+                            BackgroundColor="#fff"
+                            BorderColor="Transparent"
+                            CornerRadius="29"
+                            HasShadow="True"
+                        >
+                            <Button
+                                Padding="23,17"
+                                FontSize="20"
+                                Text="3"
+                                TextColor="#000"
+                                FontFamily="Montserrat-SemiBold.ttf#Montserrat"
+                                Clicked="Button_Three"
+                            />
+                        </assets:BFrame>
+                    </Grid>
+                    <Grid Margin="0,32,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <assets:BFrame Grid.Column="0"
+                            ShadowOpacity="0.1"
+                            ShadowColor="#000"
+                            ShadowRadius="10"
+                            HorizontalOptions="Center"
+                            Padding="0"
+                            BackgroundColor="#fff"
+                            BorderColor="Transparent"
+                            CornerRadius="29"
+                            HasShadow="True"
+                        >
+                            <Button
+                                Text="4"
+                                Padding="23,17"
+                                FontSize="20"
+                                TextColor="#000"
+                                FontFamily="Montserrat-SemiBold.ttf#Montserrat"
+                                Clicked="Button_Four"
+                            />
+                        </assets:BFrame>
+                        <assets:BFrame Grid.Column="1"
+                            ShadowOpacity="0.1"
+                            ShadowColor="#000"
+                            ShadowRadius="10"
+                            HorizontalOptions="Center"
+                            Padding="0"
+                            BackgroundColor="#fff"
+                            BorderColor="Transparent"
+                            CornerRadius="29"
+                            HasShadow="True"
+                        >
+                            <Button
+                                Text="5"
+                                Padding="23,17"
+                                FontSize="20"
+                                TextColor="#000"
+                                FontFamily="Montserrat-SemiBold.ttf#Montserrat"
+                                Clicked="Button_Five"
+                            />
+                        </assets:BFrame>
+                        <assets:BFrame Grid.Column="2"
+                            ShadowOpacity="0.1"
+                            ShadowColor="#000"
+                            ShadowRadius="10"
+                            HorizontalOptions="Center"
+                            Padding="0"
+                            BackgroundColor="#fff"
+                            BorderColor="Transparent"
+                            CornerRadius="29"
+                            HasShadow="True"
+                        >
+                            <Button
+                                Padding="23,17"
+                                FontSize="20"
+                                Text="6"
+                                TextColor="#000"
+                                BackgroundColor="Transparent"
+                                FontFamily="Montserrat-SemiBold.ttf#Montserrat"
+                                Clicked="Button_Six"
+                            />
+                        </assets:BFrame>
+                    </Grid>
+                    <Grid Margin="0,32,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <assets:BFrame Grid.Column="0"
+                            ShadowOpacity="0.1"
+                            ShadowColor="#000"
+                            ShadowRadius="10"
+                            HorizontalOptions="Center"
+                            Padding="0"
+                            BackgroundColor="#fff"
+                            BorderColor="Transparent"
+                            CornerRadius="29"
+                            HasShadow="True"
+                        >
+                            <Button
+                                Text="7"
+                                Padding="23,17"
+                                FontSize="20"
+                                TextColor="#000"
+                                FontFamily="Montserrat-SemiBold.ttf#Montserrat"
+                                Clicked="Button_Seven"
+                            />
+                        </assets:BFrame>
+                        <assets:BFrame Grid.Column="1"
+                            ShadowOpacity="0.1"
+                            ShadowColor="#000"
+                            ShadowRadius="10"
+                            HorizontalOptions="Center"
+                            Padding="0"
+                            BackgroundColor="#fff"
+                            BorderColor="Transparent"
+                            CornerRadius="29"
+                            HasShadow="True"
+                        >
+                            <Button
+                                Text="8"
+                                Padding="23,17"
+                                FontSize="20"
+                                TextColor="#000"
+                                FontFamily="Montserrat-SemiBold.ttf#Montserrat"
+                                Clicked="Button_Eight"
+                            />
+                        </assets:BFrame>
+                        <assets:BFrame Grid.Column="2"
+                            ShadowOpacity="0.1"
+                            ShadowColor="#000"
+                            ShadowRadius="10"
+                            HorizontalOptions="Center"
+                            Padding="0"
+                            BackgroundColor="#fff"
+                            BorderColor="Transparent"
+                            CornerRadius="29"
+                            HasShadow="True"
+                        >
+                            <Button
+                                Padding="23,17"
+                                FontSize="20"
+                                Text="9"
+                                TextColor="#000"
+                                FontFamily="Montserrat-SemiBold.ttf#Montserrat"
+                                Clicked="Button_Nine"
+                            />
+                        </assets:BFrame>
+                    </Grid>
+                    <Grid Margin="0,32,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <assets:BFrame Grid.Column="0"
+                            HorizontalOptions="Center"
+                            ShadowOpacity="0.1"
+                            ShadowColor="#000"
+                            ShadowRadius="10"
+                            Padding="0"
+                            BackgroundColor="#fff"
+                            BorderColor="Transparent"
+                            CornerRadius="29"
+                            HasShadow="True"
+                        >
+                            <!-- Face or Touch Id here-->
+                        </assets:BFrame>
+                        <assets:BFrame Grid.Column="1"
+                            ShadowOpacity="0.1"
+                            ShadowColor="#000"
+                            ShadowRadius="10"
+                            HorizontalOptions="Center"
+                            Padding="0"
+                            BackgroundColor="#fff"
+                            BorderColor="Transparent"
+                            CornerRadius="29"
+                            HasShadow="True"
+                        >
+                            <Button
+                                Text="0"
+                                Padding="23,17"
+                                FontSize="20"
+                                TextColor="#000"
+                                FontFamily="Montserrat-SemiBold.ttf#Montserrat"
+                                Clicked="Button_Zero"
+                            />
+                        </assets:BFrame>
+                        <assets:BFrame Grid.Column="2"
+                            HorizontalOptions="Center"
+                            Padding="0"
+                            BackgroundColor="#fff"
+                            BorderColor="Transparent"
+                            CornerRadius="29"
+                            HasShadow="False"
+                        >
+                            <pankace:PancakeView x:Name="DeleteBtn">
+                                <pankace:PancakeView.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Button_DeleteOne" />
+                                </pankace:PancakeView.GestureRecognizers>
+                                <icons:DeleteSVG
+                                    IsVisible="True"
+                                    IsEnabled="False"
+                                    IsTabStop="False"
+                                    InputTransparent="True"
+                                    VerticalOptions="Center"
+                                />
+                            </pankace:PancakeView>
+                        </assets:BFrame>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+

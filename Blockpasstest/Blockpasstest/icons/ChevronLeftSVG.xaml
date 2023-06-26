@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Blockpasstest.icons.ChevronLeftSVG">
+    <ContentView.Content>
+        <Grid>
+            <Path Data="M15 18L9 12L15 6" Stroke="#5492F9" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>
+

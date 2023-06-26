@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:assets="clr-namespace:Blockpasstest.Assets"
+    xmlns:icons="clr-namespace:Blockpasstest.icons"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+    x:Class="Blockpasstest.RegistrationPageDone"
+    ios:Page.UseSafeArea="true"
+    BackgroundColor="#FFFFFF"
+>
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="1"
+                VerticalOptions="Center"
+            >
+                <icons:SmileBlueSVG
+                    Margin="0,0,0,10"
+                    HorizontalOptions="Center"
+                />
+                <Label
+                    HorizontalOptions="Center"
+                    FontSize="20"
+                    FontFamily="Montserrat-SemiBold.ttf#Montserrat"
+                    Text="Registration"
+                    TextColor="#000000"
+                />
+                <Label
+                    HorizontalTextAlignment="Center"
+                    FontSize="14"
+                    FontFamily="SourceSansPro-Regular.ttf#Source Sans Pro"
+                    Text="Successfully registered"
+                    TextColor="#9E9E9E"
+                />
+                <ContentView
+                    Padding="45,14,45,0"
+                    HorizontalOptions="FillAndExpand"
+                    x:Name="Proceed"
+                >
+                    <assets:BFrame
+                        HasShadow="True"
+                        Padding="0"
+                        CornerRadius="7"
+                        ShadowColor="Black"
+                        ShadowOpacity="0.1"
+                        ShadowRadius="10"
+                    >
+                        <Button
+                            Margin="0"
+                            Padding="0"
+                            FontSize="10"
+                            FontFamily="Montserrat-Medium.ttf#Montserrat"
+                            Text="Login"
+                            Clicked="GoToLogin"
+                            TextColor="#FFFFFF"
+                            BackgroundColor="#5492F9"
+                        />
+                    </assets:BFrame>
+                </ContentView>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>
+

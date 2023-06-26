@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:icons="clr-namespace:Blockpasstest.icons"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    x:Class="Blockpasstest.HomePage"
+    ios:Page.UseSafeArea="true"
+    BackgroundColor="#FFFFFF"
+>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <ContentView Grid.Row="0" x:Name="MainContent" />
+            <ContentView Grid.Row="1">
+                <StackLayout>
+                    <FlexLayout
+                        Padding="0,1"
+                        Margin="0"
+                        BackgroundColor="#f4f4f4"
+                    />
+                    <Grid Margin="0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <pancake:PancakeView Grid.Column="1">
+                            <pancake:PancakeView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="GoToHome" />
+                            </pancake:PancakeView.GestureRecognizers>
+                            <icons:HomeBtnSVG
+                                IsVisible="True"
+                                IsEnabled="False"
+                                IsTabStop="False"
+                                InputTransparent="True"
+                                x:Name="HomeBtn"
+                                CustomColor="#5492F9"
+                                Padding="5"
+                                Margin="0,0,14,0"
+                            />
+                        </pancake:PancakeView>
+                        <pancake:PancakeView Grid.Column="2">
+                            <pancake:PancakeView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="GoToBlocks" />
+                            </pancake:PancakeView.GestureRecognizers>
+                            <icons:BlocksBtnSVG
+                                IsVisible="True"
+                                IsEnabled="False"
+                                IsTabStop="False"
+                                InputTransparent="True"
+                                x:Name="BlocksBtn"
+                                CustomColor="#000000"
+                                Padding="5"
+                                Margin="14,0"
+                            />
+                        </pancake:PancakeView>
+                        <pancake:PancakeView Grid.Column="3">
+                            <pancake:PancakeView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="GoToSearch" />
+                            </pancake:PancakeView.GestureRecognizers>
+                            <icons:SearchBtnSVG
+                                IsVisible="True"
+                                IsEnabled="False"
+                                IsTabStop="False"
+                                InputTransparent="True"
+                                x:Name="SearchBtn"
+                                Grid.Column="3"
+                                CustomColor="#000000"
+                                Padding="5"
+                                Margin="14,0"
+                            />
+                        </pancake:PancakeView>
+                        <pancake:PancakeView Grid.Column="4">
+                            <pancake:PancakeView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="GoToProfile" />
+                            </pancake:PancakeView.GestureRecognizers>
+                            <icons:ProfileBtnSVG
+                                IsVisible="True"
+                                IsEnabled="False"
+                                IsTabStop="False"
+                                InputTransparent="True"
+                                x:Name="ProfileBtn"
+                                Grid.Column="4"
+                                CustomColor="#000000"
+                                Padding="5"
+                                Margin="14,0,0,0"
+                            />
+                        </pancake:PancakeView>
+                    </Grid>
+                </StackLayout>
+            </ContentView>
+        </Grid>
+</ContentPage>
+

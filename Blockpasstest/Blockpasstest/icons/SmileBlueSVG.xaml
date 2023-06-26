@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Blockpasstest.icons.SmileBlueSVG">
+    <ContentView.Content>
+        <Grid HorizontalOptions="Center">
+            <Path Data="M40.5 74.25C59.1396 74.25 74.25 59.1396 74.25 40.5C74.25 21.8604 59.1396 6.75 40.5 6.75C21.8604 6.75 6.75 21.8604 6.75 40.5C6.75 59.1396 21.8604 74.25 40.5 74.25Z" Stroke="#5492F9" StrokeThickness="5" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+            <Path Data="M27 47.25C27 47.25 32.0625 54 40.5 54C48.9375 54 54 47.25 54 47.25" Stroke="#5492F9" StrokeThickness="5" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+            <Path Data="M30.375 30.375H30.4088" Stroke="#5492F9" StrokeThickness="5" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+            <Path Data="M50.625 30.375H50.6588" Stroke="#5492F9" StrokeThickness="5" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>
+

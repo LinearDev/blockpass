@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Blockpasstest.icons.LogOutSVG">
+    <ContentView.Content>
+        <Grid>
+            <Path Data="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9" Stroke="#FD5F5F" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+            <Path Data="M16 17L21 12L16 7" Stroke="#FD5F5F" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+            <Path Data="M21 12H9" Stroke="#FD5F5F" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>
+

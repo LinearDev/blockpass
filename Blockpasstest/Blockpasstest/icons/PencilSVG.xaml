@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Blockpasstest.icons.PencilSVG">
+    <ContentView.Content>
+        <Grid>
+            <Path Stroke="#5492F9" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathFigure StartPoint="11.3333,2.00004">
+                            <BezierSegment Point1="11.5084,1.82494" Point2="11.7163,1.68605" Point3="11.9451,1.59129"/>
+                            <BezierSegment Point1="12.1738,1.49653" Point2="12.419,1.44775" Point3="12.6667,1.44775"/>
+                            <BezierSegment Point1="12.9143,1.44775" Point2="13.1595,1.49653" Point3="13.3883,1.59129"/>
+                            <BezierSegment Point1="13.617,1.68605" Point2="13.8249,1.82494" Point3="14,2.00004"/>
+                            <BezierSegment Point1="14.1751,2.17513" Point2="14.314,2.383" Point3="14.4087,2.61178"/>
+                            <BezierSegment Point1="14.5035,2.84055" Point2="14.5523,3.08575" Point3="14.5523,3.33337"/>
+                            <BezierSegment Point1="14.5523,3.58099" Point2="14.5035,3.82619" Point3="14.4087,4.05497"/>
+                            <BezierSegment Point1="14.314,4.28374" Point2="14.1751,4.49161" Point3="14,4.66671"/>
+                            <LineSegment Point="5,13.6667"/>
+                            <LineSegment Point="1.33333,14.6667"/>
+                            <LineSegment Point="2.33333,11"/>
+                            <LineSegment Point="11.3333,2.00004"/>
+                        </PathFigure>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
+        </Grid>
+    </ContentView.Content>
+</ContentView>
+

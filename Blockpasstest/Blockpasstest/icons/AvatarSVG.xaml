@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Blockpasstest.icons.AvatarSVG">
+    <ContentView.Content>
+        <Grid Padding="0" Margin="0,0,4,3">
+            <Path Data="M28.3333 29.75V26.9167C28.3333 25.4138 27.7363 23.9724 26.6736 22.9097C25.6109 21.847 24.1696 21.25 22.6667 21.25H11.3333C9.83044 21.25 8.38911 21.847 7.3264 22.9097C6.26369 23.9724 5.66667 25.4138 5.66667 26.9167V29.75" Stroke="#5492F9" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+            <Path Data="M17 15.5833C20.1296 15.5833 22.6667 13.0463 22.6667 9.91667C22.6667 6.78705 20.1296 4.25 17 4.25C13.8704 4.25 11.3333 6.78705 11.3333 9.91667C11.3333 13.0463 13.8704 15.5833 17 15.5833Z" Stroke="#5492F9" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>
+

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Blockpasstest.icons.LogoBlueSVG">
+    <ContentView.Content>
+        <Grid HorizontalOptions="Center" Padding="0,0,9,5">
+            <Path Data="M70.875 54V27C70.8738 25.8163 70.5613 24.6538 69.9689 23.629C69.3766 22.6042 68.5251 21.7531 67.5 21.1613L43.875 7.66129C42.8489 7.06885 41.6849 6.75696 40.5 6.75696C39.3151 6.75696 38.1511 7.06885 37.125 7.66129L13.5 21.1613C12.4749 21.7531 11.6234 22.6042 11.0311 23.629C10.4387 24.6538 10.1262 25.8163 10.125 27V54C10.1262 55.1837 10.4387 56.3463 11.0311 57.3711C11.6234 58.3959 12.4749 59.2469 13.5 59.8388L37.125 73.3388C38.1511 73.9312 39.3151 74.2431 40.5 74.2431C41.6849 74.2431 42.8489 73.9312 43.875 73.3388L67.5 59.8388C68.5251 59.2469 69.3766 58.3959 69.9689 57.3711C70.5613 56.3463 70.8738 55.1837 70.875 54Z" Stroke="#5492F9" StrokeThickness="5" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+            <Path Data="M11.0362 23.49L40.5 40.5337L69.9637 23.49" Stroke="#5492F9" StrokeThickness="5" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+            <Path Data="M40.5 74.52V40.5" Stroke="#5492F9" StrokeThickness="5" StrokeLineCap="Round" StrokeLineJoin="Round"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>
+

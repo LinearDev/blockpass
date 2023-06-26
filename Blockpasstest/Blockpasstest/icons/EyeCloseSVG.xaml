@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Blockpasstest.icons.EyeCloseSVG">
+    <ContentView.Content>
+        <Grid>
+            <Grid.Clip>
+                <RectangleGeometry Rect="0,0,16,16"/>
+            </Grid.Clip>
+            <Path Stroke="#5492F9" StrokeLineCap="Round" StrokeLineJoin="Round" Data="M11.96 11.96C10.8204 12.8286 9.43274 13.3099 8.00001 13.3333C3.33334 13.3333 0.666672 7.99998 0.666672 7.99998C1.49593 6.45457 2.6461 5.10438 4.04001 4.03998M6.60001 2.82664C7.05889 2.71923 7.52871 2.66554 8.00001 2.66664C12.6667 2.66664 15.3333 7.99998 15.3333 7.99998C14.9287 8.75705 14.446 9.4698 13.8933 10.1266M9.41334 9.41331C9.23024 9.60981 9.00944 9.76741 8.76411 9.87673C8.51878 9.98604 8.25394 10.0448 7.9854 10.0496C7.71686 10.0543 7.45011 10.0049 7.20108 9.9043C6.95204 9.80371 6.72582 9.654 6.5359 9.46408C6.34599 9.27416 6.19627 9.04794 6.09568 8.7989C5.99509 8.54987 5.94569 8.28312 5.95043 8.01458C5.95517 7.74604 6.01394 7.48121 6.12326 7.23587C6.23257 6.99054 6.39017 6.76974 6.58667 6.58664"/>
+            <Path Stroke="#5492F9" StrokeLineCap="Round" StrokeLineJoin="Round" Data="M0.666672 0.666626L15.3333 15.3333"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>
+

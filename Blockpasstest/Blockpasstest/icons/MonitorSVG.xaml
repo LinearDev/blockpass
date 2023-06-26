@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Blockpasstest.icons.MonitorSVG">
+    <ContentView.Content>
+        <Grid>
+            <Path Data="M20 3H4C2.89543 3 2 3.89543 2 5V15C2 16.1046 2.89543 17 4 17H20C21.1046 17 22 16.1046 22 15V5C22 3.89543 21.1046 3 20 3Z" Stroke="Black" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" />
+            <Path Data="M8 21H16" Stroke="Black" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" />
+            <Path Data="M12 17V21" Stroke="Black" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" />
+        </Grid>
+    </ContentView.Content>
+</ContentView>
+

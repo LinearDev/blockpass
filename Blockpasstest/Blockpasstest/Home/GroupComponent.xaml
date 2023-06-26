@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Blockpasstest.Home"
+    xmlns:icons="clr-namespace:Blockpasstest.icons"
+    xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    x:Class="Blockpasstest.Home.GroupComponent"
+    x:Name="This"
+    x:DataType="local:GroupComponent">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <icons:ColorConverter x:Key="ColorConverter" />
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <Frame
+            HasShadow="False"
+            CornerRadius="10"
+            Padding="18, 16"
+            BackgroundColor="#f4f4f4"
+        >
+            <Grid VerticalOptions="Start">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Path
+                    Data="M2,0 L10,0 A2,2 0 0 1 12,2 L12,10 A2,2 0 0 1 10,12 L2,12 A2,2 0 0 1 0,10 L0,2 A2,2 0 0 1 2,0 Z" 
+                    x:Name="Main"
+                    Grid.Column="0"
+                    Fill="{Binding Source={x:Reference This}, Path=GroupColor, Converter={StaticResource ColorConverter}}"
+                    VerticalOptions="Center"
+                />
+                <Label
+                    Grid.Column="1"
+                    Text="{Binding Source={x:Reference This}, Path=GroupName}"
+                    FontFamily="Montserrat-SemiBold.ttf"
+                    FontSize="14"
+                    VerticalOptions="Center"
+                />
+                <pancake:PancakeView
+                    Padding="0"
+                    Grid.Column="2"
+                    VerticalOptions="Center"
+                    HorizontalOptions="End"
+                >
+                    <icons:PencilSVG />
+                </pancake:PancakeView>
+            </Grid>
+        </Frame>
+    </ContentView.Content>
+</ContentView>
+
